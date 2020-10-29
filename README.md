@@ -57,7 +57,7 @@ A quick look at the top-level files and directories you'll see in the project.
 
   **Deploy.**
     
-    This app it was deploy in [SmartRoutes](https://smartroute.fulldevs.software/)._  with Firebase , enjoy your trip with us  
+    This app it was deploy in [SmartRoutes](https://smartroute.fulldevs.software/) with Firebase , enjoy your trip with us  
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
