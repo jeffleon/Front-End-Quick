@@ -13,12 +13,12 @@ This project its to solve the problem of logistic companies that have to use a r
 
     For this project need to install all dependencies use the command below
     ```shell
-    # create a new Gatsby site using the hello-world starter
+    # install all dependencies about the project
     cd Front-End-Quick
     npm install
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -26,7 +26,7 @@ This project its to solve the problem of logistic companies that have to use a r
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
@@ -55,6 +55,9 @@ A quick look at the top-level files and directories you'll see in the project.
     ├── package.json
     └── README.md
 
+  **Deploy.**
+    
+    This app it was deploy in https://smartroute.fulldevs.software/ with Firebase , enjoy your trip with us  
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
