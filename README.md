@@ -34,6 +34,10 @@ This project its to solve the problem of logistic companies that have to use a r
 
     Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
+
+ **Deploy.**
+
+    This app it was deploy in  [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._ with Firebase , enjoy your trip with us  
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in the project.
@@ -55,9 +59,7 @@ A quick look at the top-level files and directories you'll see in the project.
     ├── package.json
     └── README.md
 
-  **Deploy.**
-    
-    This app it was deploy in [SmartRoutes](https://smartroute.fulldevs.software/) with Firebase , enjoy your trip with us  
+ 
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
