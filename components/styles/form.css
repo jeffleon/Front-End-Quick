@@ -1,0 +1,37 @@
+.form{
+    position: fixed;
+    width: 18.5rem;
+    top: 200px;
+    left: 20px;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.40);
+    backdrop-filter: blur(15px);
+}
+.backToForm {
+    position: fixed;
+    left: 20px;
+    top: 250px;
+    z-index: 1;
+}
+.autoComInp{
+    width: 95%;
+    overflow: hidden;
+}
+
+.buttom{
+    width: 95%;
+}
+
+.changeOrigins{
+   border-radius: 40%;
+   margin-left: 250px;
+}
+.contentForm{
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+.text-danger{
+    margin-left: 10px;
+}
