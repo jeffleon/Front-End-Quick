@@ -6,6 +6,9 @@ import {
   DirectionsRenderer,
 } from "react-google-maps";
 import Markers from './markers';
+
+
+/* Map component render the Google maps content */
 class Map extends Component {
     constructor(props){
         super(props);
@@ -13,6 +16,8 @@ class Map extends Component {
             directions: null
         };
     }
+  /* when the component did mount the google maps was in charge of render the route when 
+     the user type the origin and destination points*/
   componentDidMount() {
     try
     {
@@ -20,6 +25,7 @@ class Map extends Component {
       const origin =  this.props.payload.origin;
       const destination = this.props.payload.destination;
       if(origin !== undefined){
+        {/* this was the specifications to render the route between the origin and destination */}
         directionsService.route(
           {
             origin: new google.maps.LatLng(origin.lat, origin.lng),
@@ -38,6 +44,7 @@ class Map extends Component {
         );
       }
     } catch(error) {
+      /* if for one reasaon the render of the directions mess up, the page will be reloaded */
       window.location.reload(false);
     }
    
@@ -49,7 +56,9 @@ class Map extends Component {
         defaultCenter={{ lat: 4.709013, lng: -74.168438}}
         defaultZoom={7}
       >
+        {/* google maps component with a center of position */}
         <DirectionsRenderer directions={this.state.directions} options={{suppressMarkers:true}}/>
+        {/* that was the markes of the tolls and other stuff information about trip especifications */}
         <Markers payload={this.props.payload} />
       </GoogleMap>
     ));

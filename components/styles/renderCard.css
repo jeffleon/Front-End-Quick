@@ -8,11 +8,7 @@
     max-height: 300px;
     overflow-y: auto;
 }
-.backToForm{
-    position: fixed;
-    left: 20px;
-    top: 180px;;
-}
+
 p{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;

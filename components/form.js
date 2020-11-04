@@ -28,29 +28,38 @@ const LightTooltip = withStyles((theme) => ({
   }))(Tooltip);
 
 
-
+/* Component Form */
 const Form_ = ({submit_Handler, payloadFunction}) => {
+    /* Handle a origin destination when the user type in input */
     const [origin, setAddress] = useState("");
+    /* Handle when the user type the sibmit button */
     const [onsubmit, setOnsubmit] = useState(false);
+    /* This was implemented to interchange the origin with destination typed by user */
     const inputOri = useRef(null);
     const inputDest = useRef(null);
     const refSelect = useRef(null);
+    /* **************************************************************************** */
+    /* This is a Hook to catch the width and height of screen */
     const { height, width } = useWindowDimensions();
-    console.log(height, width);
     const toggle = () => {setOnsubmit(!onsubmit)}
+     /* Handles a autocomplete component of Origin when is selected and when the component is change */
     const handleChange = (value) => {
         setAddress(value);
     }
     const handleSelect = (value) => {
         setAddress(value);
     }
+     /* Handle a destination when the user typed in input */
     const [destination, setAddressD] = useState("");
+    /* Handles a autocomplete component of Destination when is selected and when the component is change */
     const handleChangeD = (value) => {
         setAddressD(value);
     }
     const handleSelectD = (value) => {
         setAddressD(value);
     }
+    /* ********************************************************************************* */
+    /* API of gecode implemented to transform a name of place or direction in a lat and long parameters */
     var geocode = async(value) =>{
         Geocode.setApiKey(API_KEY_GOOGLE_MAPS);
         Geocode.setLanguage("es");
@@ -62,6 +71,8 @@ const Form_ = ({submit_Handler, payloadFunction}) => {
             console.error(error);
         }
     }
+    /* ************************************************************************************************ */
+    /* submit function */
     var submit = async (values) =>{
         var ori = await geocode(origin);
         var dest = await geocode(destination);
@@ -73,11 +84,14 @@ const Form_ = ({submit_Handler, payloadFunction}) => {
         submit_Handler({origin: ori, destination: dest, type: values.type});
         payloadFunction({points:[ori,dest], vehicle: {name: values.type}});
     }
+    /* use the ref in the code below to change the orgin input for the destination input */
     var change = async () => {
         setAddress(inputDest.current.props.address); 
         setAddressD(inputOri.current.props.address); 
     }
-    console.log(onsubmit);
+    /* this is like a media query to not render a form component when click sumit button in a 
+    cellphone or a small divice only render a map and a button to show again the form to 
+    put other location and show the route again */    
     if (width < 600 && onsubmit === true){
         return(
             <LightTooltip title="Go Back to next trip" placement="top" arrow>

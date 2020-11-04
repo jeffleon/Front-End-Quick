@@ -23,7 +23,7 @@ const LightTooltip = withStyles((theme) => ({
       zIndex:1
     },
   }))(Tooltip);
-
+/* this component render all about the results of the post request */
 const RenderCard = ({data}) => {
     const [isOpen, setOpen] = useState(true);
     const toggle = () => setOpen(!isOpen);
@@ -33,6 +33,7 @@ const RenderCard = ({data}) => {
       };      
     return(
         <div className="wrapperCard">
+            {/* this render all results that return the json object from post request */}
             <Button className="buttonResults" color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Trip Description <FontAwesomeIcon className="iconAngledown" icon={isOpen === true?faAngleUp:faAngleDown}/></Button>
             <Collapse isOpen={isOpen}>
                 <Card className="cardResults"> 
@@ -73,7 +74,6 @@ const RenderCard = ({data}) => {
                                             <span className="cardDisCom"><FontAwesomeIcon icon={faMoneyBillAlt} /><span className="ml-2">${data.total_vehicle_expenses}</span></span>
                                         </LightTooltip>
                                     </CardText>
-                                   
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
