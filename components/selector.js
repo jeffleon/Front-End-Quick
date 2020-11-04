@@ -1,7 +1,6 @@
 import React from 'react';
 import useFetch from '../hooks/usefetch';
-import {Form, InputGroup, FormGroup, Label, Col, Input, Row, Button} from 'reactstrap'
-import { Control, LocalForm, Errors} from "react-redux-form";
+import { Control, Errors} from "react-redux-form";
 
 /* This is a component that is used like selector*/
 const Selector = ({refSelect}) => {

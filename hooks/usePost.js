@@ -16,8 +16,6 @@ const usePost = (url, body="null") => {
             try{
                 var response;
                 if (body.points){
-                    console.log(body);
-                     var cors = "https://cors-anywhere.herokuapp.com/"
                     response = await fetch(url,requestOptions);
                     var data = await response.json();
                 }

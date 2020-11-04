@@ -1,10 +1,7 @@
 import { combineReducers } from 'redux';
 import app from './app';
-import scriptValidation from './validationscript';
-import dataPost from './post';
 
+/* types of actions */
 export default combineReducers({
-  data: app,
-  validation: scriptValidation,
-  post: dataPost
+  data: app
 })

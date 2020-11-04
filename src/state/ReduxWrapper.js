@@ -8,7 +8,7 @@ import rootReducer from "."
 
 const initialState = {}
 const middleware = [thunk]
-
+/* Redux wrapper its for redux work in Gatsby project */
 const store = createStore(
   rootReducer,
   initialState,

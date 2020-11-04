@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Card, CardBody, CardTitle, CardText, Collapse, Button} from 'reactstrap';
+import {Card, CardBody, CardText, Collapse, Button} from 'reactstrap';
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
@@ -87,6 +87,7 @@ const RenderCard = ({data}) => {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography component={'span'}>
+                                    {/* go througth each toll to show his respective name */}
                                     {data.tolls.map((element, index)=><CardText key={index}>{`${element.name.length < 25?element.name:element.name.slice(0,20) + '...'}:`} <span className="ml-auto">{`$ ${data.toll_expenses.byTolls[index]}`}</span></CardText>)}
                                 </Typography>
                             </AccordionDetails>

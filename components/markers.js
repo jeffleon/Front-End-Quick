@@ -15,7 +15,6 @@ import { withStyles} from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import tollDisable from '../assets/images/riot-police.png'
 import { faGasPump, faStopwatch , faRoad , faStore, faMoneyBillAlt} from '@fortawesome/free-solid-svg-icons';
-import {dataPostFunction} from '../src/actions/sampleAction';
 import Tooltip from '@material-ui/core/Tooltip';
 
 const LightTooltip = withStyles((theme) => ({
@@ -145,4 +144,4 @@ const mapStateToProps = state => ({
     darkMode: state.data.isDarkMode,
   })
 
-export default connect(mapStateToProps,{dataPostFunction})(Markers);
+export default connect(mapStateToProps)(Markers);

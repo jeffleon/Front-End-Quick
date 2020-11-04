@@ -1,7 +1,6 @@
 import React from 'react'
 import {Navbar, Collapse, NavbarBrand, Nav, NavLink, NavItem, NavbarToggler} from 'reactstrap'
 import { useState } from 'react'
-import quicklogo from '../assets/images/quick-logo.jpg'
 import rutaIcon from '../assets/images/ruta.png';
 import './styles/navbar.css'
 /* NavBar component */

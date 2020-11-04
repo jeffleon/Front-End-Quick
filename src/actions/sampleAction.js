@@ -6,17 +6,3 @@ export const payloadFunction = (data) => (dispatch) => {
         payload: data,
       });
 };
-/*
-export const scriptFunction = (data) => (dispatch) =>{
-    dispatch({
-      type: types.VERIFICATIONSCRIPT,
-      validation: data,
-    })
-}
-*/
-export const dataPostFunction = (dataPost) => (dispatch) => {
-  dispatch({
-    type: types.POST,
-    post: dataPost
-  })
-}

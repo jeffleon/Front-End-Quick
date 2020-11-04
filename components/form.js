@@ -1,7 +1,7 @@
 import React, { useState, useRef} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Form, InputGroup, FormGroup, Label, Col, Input, Row, Button} from 'reactstrap';
-import { Control, LocalForm, Errors} from "react-redux-form";
+import {Col, Row, Button} from 'reactstrap';
+import {LocalForm} from "react-redux-form";
 import Geocode from "react-geocode";
 import Selector from './selector';
 import { connect } from "react-redux";
