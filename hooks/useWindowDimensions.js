@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+/* custome hook to know the width and heigth screen size */
 export default function useWindowDimensions() {
 
   const hasWindow = typeof window !== 'undefined';

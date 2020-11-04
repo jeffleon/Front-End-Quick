@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 
+/* post fetch custome hook */
 const usePost = (url, body="null") => {
     const [data_post, setData] = useState([]);
     const [loading_post, setLoading] = useState(true);
