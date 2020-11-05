@@ -60,7 +60,7 @@ A quick look at the top-level files and directories you'll see in the project.
     └── README.md
 
 
-## By
+## Authors
 
 FullDevs Team:
 
