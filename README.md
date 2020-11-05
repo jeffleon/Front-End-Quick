@@ -59,7 +59,15 @@ A quick look at the top-level files and directories you'll see in the project.
     ├── package.json
     └── README.md
 
- 
+
+## By
+
+FullDevs Team:
+
+- Juan Carlos Rengifo      - Front-end
+- Jefferson Alexander Leon - Front-end/Back-end
+- Eduard Sneyder Amador    - DevOps/Back-end
+- Andres Santiago Reyes    - Back-end
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
